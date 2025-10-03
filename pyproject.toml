@@ -1,0 +1,46 @@
+[project]
+name = "data-analysis-portfolio"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel",
+    "jupyterlab",
+    "notebook",
+    "ipywidgets",
+    "dask[dataframe]",
+    "joblib",
+    "multiprocess",
+    "numpy",
+    "pandas",
+    "python-dateutil",
+    "requests",
+    "tqdm",
+    "folium",
+    "matplotlib",
+    "pillow",
+    "seaborn",
+    "catboost",
+    "lightgbm",
+    "numba",
+    "probatus",
+    "scikit-learn",
+    "scipy",
+    "shap",
+    "statsmodels",
+    "selenium",
+    "webdriver-manager",
+    "polylabel",
+    "pyshp",
+]
+
+[project.optional-dependencies]
+visual3d = [
+    "open3d",
+    "pptk",
+    "vispy",
+]
+domain = [
+    "geoband",
+]
