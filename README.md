@@ -37,6 +37,7 @@ This repository documents my production-scale machine learning and geospatial an
 </p>
 
 ## Data Footprint & Git Hygiene
+
 Large datasets, model artifacts, and secrets are intentionally excluded from version control via the expanded `.gitignore`. Hydrate them locally as needed:
 
 | Path | Purpose | Git status | How to hydrate |
@@ -47,7 +48,8 @@ Large datasets, model artifacts, and secrets are intentionally excluded from ver
 | `config/` | API keys & secrets (e.g., 주소 검색, Kakao geocoder) | git-ignored | Create locally and insert your credentials following the variable names referenced in the notebooks. |
 | `resources/fonts/` | Nanum font files for Korean map labeling | `.ttf` files are git-ignored | Install Nanum fonts system-wide or place the `.ttf` files locally (kept out of Git for licensing). |
 
-> Note: standalone `*.csv`, `*.txt`, and `*.xlsx` artifacts are ignored globally. Exported results ship as documentation snapshots instead; regenerate them from notebooks when needed.
+> **Note 1**: All datasets used were publicly available through Korean open government portals.<br>
+> **Note 2**: Standalone `*.csv`, `*.txt`, and `*.xlsx` artifacts are ignored globally. Exported results ship as documentation snapshots instead; regenerate them from notebooks when needed.
 
 ## Environment Setup
 ```bash
